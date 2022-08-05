@@ -8,8 +8,8 @@ export default function Card(props){
         <section className={props.class}>
             <article id={props.id} className={`${props.class}--img`}>
                 <Image src={props.thumbnail}
-                        // width={228}
-                        // height={177}
+                         width={228}
+                         height={177}
                     />
             </article>
             <article id={props.id} className={`${props.class}--content`}>
