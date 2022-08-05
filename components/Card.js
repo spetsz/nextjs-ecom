@@ -3,19 +3,22 @@ import Image from 'next/image'
 
 
 
-export default function Card(props){
+export default function Card({item, className}){
+
+  const {id, thumbnail, title, price, rating} = item
+
     return(
-        <section className={props.class}>
-            <article id={props.id} className={`${props.class}--img`}>
-                <Image src={props.thumbnail}
+        <section className={className}>
+            <article id={id} className={`${className}--img`}>
+                <Image src={thumbnail}
                          width={228}
                          height={177}
                     />
             </article>
-            <article id={props.id} className={`${props.class}--content`}>
-                <h3>{props.title}</h3>
-                <li>{props.price}</li>
-                <li>{props.rating}</li>
+            <article id={id} className={`${className}--content`}>
+                <h3>{title}</h3>
+                <li>{price}</li>
+                <li>{rating}</li>
                 <button>Add to card</button>
             </article>
         </section>
