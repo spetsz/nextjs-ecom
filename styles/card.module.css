@@ -1,19 +1,20 @@
-.card__container{
+/* .card__container{
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-}
+} */
 
+.card__img-container{
+    border: 20px solid blue;
+}
 .card__body{
-    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
 }
 
 .card__body__title{
-    overflow: hidden;
     flex-basis: 100%;
 }
 
@@ -24,11 +25,8 @@
     white-space: nowrap;
 }
 
-.card__img-container{
-    border: 20px solid blue;
-}
-
-.card__btn{
-    background-color: green;
+.card__body__btn{
+    background-color: rgb(128, 0, 0);
     margin-left: auto;
+    border: none;
 }
