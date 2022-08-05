@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image'
-
+import Link from "next/link";
 
 
 export default function Card({item, className}){
@@ -10,10 +10,15 @@ export default function Card({item, className}){
     return(
         <section className={className}>
             <article id={id} className={`${className}--img`}>
-                <Image src={thumbnail}
-                         width={228}
-                         height={177}
-                    />
+                <Link href={`/products/${id}`} >
+                    <Image src={thumbnail}
+                            width={228}
+                            height={177}
+                        />
+
+                </Link>
+                
+              
             </article>
             <article id={id} className={`${className}--content`}>
                 <h3>{title}</h3>

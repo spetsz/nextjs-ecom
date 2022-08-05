@@ -1,5 +1,5 @@
 import React from "react";
-import CardGrid from "../components/CardGrid";
+import CardGrid from "../../components/CardGrid";
 
 export async function getStaticProps(){
     const res = await fetch('https://dummyjson.com/products?limit=5')
