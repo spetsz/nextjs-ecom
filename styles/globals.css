@@ -1,7 +1,11 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* color: white; */
+}
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -11,9 +15,25 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.glassmorphHigh{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
 }
+
+.glassmorphLow{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -23,4 +43,28 @@ a {
     color: white;
     background: black;
   }
+}
+
+/* TEMPORARY CLASSES. SUBJECT TO CHANGE */
+
+.products__card--grid{
+  background-color: grey;
+  box-shadow: white 0px 0px 6px 1px;
+  aspect-ratio: 1/1;
+}
+.products__card--grid--img{
+
+}
+.products__card--grid--content{
+  padding-inline: 10px;
+  padding-bottom: 10px;
+
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  gap:30px;
+  justify-content: space-between;
+  
 }
