@@ -1,7 +1,4 @@
 .hero__container{
-<<<<<<< HEAD
-    /* background: url('https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'); */
-=======
     overflow: hidden;
     position: relative;
     height: 100vh;
@@ -23,5 +20,4 @@
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 5px );
     border-radius: 10px;
->>>>>>> 6b8127f951a28997faacc6cf71f8bd8404459f17
 }

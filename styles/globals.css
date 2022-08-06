@@ -43,31 +43,3 @@ a {
     background: black;
   }
 }
-<<<<<<< HEAD
-
-
-/* TEMPORARY CLASSES. SUBJECT TO CHANGE */
-
-.products__card--grid{
-  background-color: grey;
-  box-shadow: white 0px 0px 6px 1px;
-  aspect-ratio: 1/1;
-}
-.products__card--grid--img{
-
-}
-.products__card--grid--content{
-  padding-inline: 10px;
-  padding-bottom: 10px;
-
-}
-
-.card-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-  gap:30px;
-  justify-content: space-between;
-  
-}
-=======
->>>>>>> 6b8127f951a28997faacc6cf71f8bd8404459f17

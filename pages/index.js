@@ -1,10 +1,3 @@
-import React from "react"
-<<<<<<< HEAD
-import Hero from "../components/homepage/Hero"
-export default function Home() {
-  return (
-    <Hero/>
-=======
 import Featured from "../components/homepage/Featured"
 import Hero from "../components/homepage/Hero"
 
@@ -22,6 +15,6 @@ export default function Home({products, ...props}) {
     <Hero/>
     <Featured products={products}/>
   </>
->>>>>>> 6b8127f951a28997faacc6cf71f8bd8404459f17
+
   )
 }
