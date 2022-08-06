@@ -5,7 +5,7 @@ import { useState } from "react"
 
 export const getStaticPaths = async () =>{
 
-    const res = await axios.get('https://dummyjson.com/products?limit=5')
+    const res = await axios.get('https://dummyjson.com/products?limit=15')
     const {products} = res.data
 
     const paths = products.map(product =>{
