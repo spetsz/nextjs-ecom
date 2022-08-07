@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     
+    
   }
   
   .sidebar{
@@ -29,6 +30,7 @@
     flex : 2;
     display: flex;
     flex-direction: column;
+    border-left: 1px solid rgb(43, 88, 43);
   }
   
   .card_top{
@@ -36,11 +38,13 @@
     justify-content: space-between;
     height: fit-content;
     padding: 7px 16px;
-    gap : 20px
+    gap : 20px;
+  
   }
   
   .card_bottom{
     padding: 7px 16px;
+    margin-top: 20px;
   }
   
 .card_image_container{
@@ -72,6 +76,13 @@
   
   }
   
+.card_rating{
+  width : 30%;
+  display :flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
   .price{
     font-size: 2rem;
     color :rgb(43, 88, 43)
@@ -114,6 +125,10 @@
     background-color: rgb(43, 88, 43);
   }
 
+  .actions_btn:hover{
+    background-color: rgb(73, 190, 73);
+  }
+
 
   
  .add_to_cart{
@@ -124,6 +139,13 @@
     background-color: transparent;
     border : 1px solid rgb(43, 88, 43);
     color : rgb(43, 88, 43);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .add_to_cart:hover{
+    color : rgb(73, 190, 73)
   }
   
   

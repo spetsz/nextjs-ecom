@@ -51,5 +51,6 @@ export default Home = ({products, ...props}) => {
     <Sale/>
     <Blogs/>
   </>
+
   )
 }
