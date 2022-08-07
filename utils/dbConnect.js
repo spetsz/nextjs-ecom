@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 // Loading global vars
 dotenv.config()
 
-const db = async () => {
+const dbConnect = async () => {
   
     mongoose.connect(
         process.env.DB_URI, 
@@ -20,4 +20,4 @@ const db = async () => {
 
 
 
-export default db
+export default dbConnect
