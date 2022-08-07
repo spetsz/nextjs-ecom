@@ -4,11 +4,11 @@ import Image from "next/image";
 import CardGrid from "../CardGrid"
 
 
-
-export default function Featured({products, ...props}){
-    console.log('inside FEATURE DDD !!', products)
+let Featured;
+export  default Featured = ({products, ...props}) => {
     return (
         <>
+        <h2>Most Popular Products</h2>
         <CardGrid itemList={products} />
         </>
     )
