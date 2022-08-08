@@ -3,6 +3,7 @@ import Hero from "../components/homepage/Hero"
 import Featured from "../components/homepage/Featured"
 import Sale from "../components/homepage/Sale";
 import Blogs from "../components/homepage/Blogs";
+import Navbar from "../components/Navbar";
 
 ////////////////////////////////////////////////////////////
 //* All this needs to be a prop *//
@@ -41,11 +42,10 @@ export async function getStaticProps(){
     }
 }
 
-
-let Home
-export default Home = ({products, ...props}) => {
+export default function Home({products, ...props}){
   return (
   <>
+    <Navbar/>
     <Hero slides={heroData}/>
     <Featured products={products}/>
     <Sale/>
