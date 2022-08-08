@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from '../../styles/hero.module.css';
 import Image from "next/image";
 import heroBg from '../../public/assets/hero_bg.jpg';
+import BgWithBlur from "../BgWithBlur";
 import { BsChevronDoubleRight, BsChevronDoubleLeft } from "react-icons/bs";
 
 export default function Hero({ slides }) {
@@ -42,17 +43,7 @@ export default function Hero({ slides }) {
     return (
         <>
             <section className={styles.hero__container}>
-
-                {/* Background Image */}
-                <article className={styles.hero__imgContainer}>
-                    <Image src={heroBg}
-                        layout="fill"
-                        objectFit="cover"
-                        priority
-                    />
-                </article>
-                {/* The following article tag is responsible for the frosted glass effect on top of the bg  */}
-                <article className={`${styles.hero__imgContainer} ${styles.glassmorph_high}`}></article>
+                <BgWithBlur bg={heroBg} height={'100vh'} width={'100vw'}/>
 
                 {/* The main content, logo, links, etc */}
                 <main className={styles.hero_content}>
