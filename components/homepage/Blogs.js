@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/blogs.module.css"
 
-export default Blog =>{
+export default function Blog (){
     return (
         <>
         <h2>Our Blogs </h2>

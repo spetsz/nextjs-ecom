@@ -45,7 +45,6 @@ export async function getStaticProps(){
 export default function Home({products, ...props}){
   return (
   <>
-    <Navbar/>
     <Hero slides={heroData}/>
     <Featured products={products}/>
     <Sale/>

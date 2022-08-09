@@ -2,8 +2,7 @@ import React from "react";
 import styles from "../../styles/sale.module.css"
 
 
-let Sale
-export default Sale = () =>{
+export default function Sale(){
     return (
         <>
         <h2>Sale Product</h2>

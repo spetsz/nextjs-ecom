@@ -1,24 +1,34 @@
 import React from "react";
+import { useState } from "react";
 import {DiReact} from "react-icons/di";
 import Link from "next/link";
+import styles from "../styles/navbar.module.css"
 
 // This will move to another file
-let navTempStyle = {
-    position: 'fixed', 
-    top: '0px', 
-    insetInline: '0px',
-    border: 'solid red 2px',
-    minHeight: '60px',
-    zIndex: '10',
-    display: 'flex',
-    gap: '10px',
+// let navTempStyle = {
+    // position: 'fixed', 
+    // top: '0px', 
+    // insetInline: '0px',
+    // border: 'solid red 2px',
+    // minHeight: '60px',
+    // zIndex: '10',
+    // display: 'flex',
+    // gap: '10px',
+// }
 
-}
 
 export default function Navbar({links, ...props}){
+    const [pos, setPos] = useState('sticky')
+    const setPosition=()=>{
+        setPosition('absolute')
+        console.log('moving')
+    }
     return (
         <>
-        <nav style={navTempStyle} className='glassmorphLow'>
+        <nav style={{position: pos}} 
+            className={styles.navbar_container +' '+ styles.glassmorphHigh}
+            onScroll={setPosition}
+            >
         {
         // Dynamic links with the following. Need to decide on the type/ category of links before uncommenting the code below.
             // links &&

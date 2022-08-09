@@ -28,7 +28,7 @@ export default function ProductsPage({ products, ...props }) {
                 <main style={{ flexBasis: '100%' }} className={styles.mainContent_container}>
                     {
                         isContentLoaded ? <CardGrid itemList={products} /> :
-                            [...Array(10)].map(()=> <CardGrid itemList={products} loading/> )
+                            [...Array(10)].map((elem, i)=> <CardGrid key={i} itemList={products} loading/> )
                     }
 
                     <button onClick={getMoreProducts} className={styles.contentLoad_btn}>
