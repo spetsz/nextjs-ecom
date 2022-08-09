@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* color: white; */
 }
 html,
 body {
@@ -17,23 +16,22 @@ a {
 
 .glassmorphHigh{
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(11.8px);
   -webkit-backdrop-filter: blur(11.8px);
 }
 
 .glassmorphLow{
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.006);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 
-
+.skeleton{
+  background: white;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -43,28 +41,4 @@ a {
     color: white;
     background: black;
   }
-}
-
-/* TEMPORARY CLASSES. SUBJECT TO CHANGE */
-
-.products__card--grid{
-  background-color: grey;
-  box-shadow: white 0px 0px 6px 1px;
-  aspect-ratio: 1/1;
-}
-.products__card--grid--img{
-
-}
-.products__card--grid--content{
-  padding-inline: 10px;
-  padding-bottom: 10px;
-
-}
-
-.card-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-  gap:30px;
-  justify-content: space-between;
-  
 }

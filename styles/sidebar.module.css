@@ -1,0 +1,19 @@
+.sidebar_container{
+    position: relative;
+    padding-inline: 30px;
+    overflow: hidden;
+    transition: max-width 200ms ease-in-out, padding 100ms ease-in-out;
+
+}
+
+.collapse_btn{
+    display: grid;
+    padding: 5px;
+
+    font-size: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: transform 200ms linear;
+    z-index: 10;
+}
