@@ -1,0 +1,23 @@
+.mainContent_container{
+    display: grid;
+    gap: 80px;
+}
+
+.contentLoad_btn{
+    border: 0px;
+    padding-top: 9px;
+    border-top: solid rgb(93, 93, 93) 2px;
+    background-color: transparent;
+    transition: border 300ms;
+}
+.contentLoad_btn:hover{
+    border-top: solid rgb(15, 202, 74) 2px;
+    transition: border 300ms;
+}
+
+.bottom_banner{
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.501), rgba(114, 114, 114, 0.735));
+    border: solid red 2px;
+    text-align: center;
+    padding: 10px;
+}

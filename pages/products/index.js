@@ -1,6 +1,7 @@
 import React from "react";
-import CardGrid from "../../components/CardGrid";
-import Sidebar from "../../components/Sidebar";
+import ProductsPage from "../../components/productsPage/ProductsPage";
+
+
 export async function getStaticProps(){
     const res = await fetch('https://dummyjson.com/products?limit=10')
     const props = await res.json()
@@ -12,10 +13,7 @@ export async function getStaticProps(){
 export default function Products({products ,...props}){
     return (
         <>
-        <section style={{display:'flex'}}>
-            <Sidebar/>
-            <CardGrid itemList={products} style={{flexBasis: '100%'}}/>
-        </section>
+            <ProductsPage products={products}/>
         </>
     )
 }

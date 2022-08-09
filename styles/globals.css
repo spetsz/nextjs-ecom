@@ -29,7 +29,9 @@ a {
   -webkit-backdrop-filter: blur(4px);
 }
 
-
+.skeleton{
+  background: white;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
