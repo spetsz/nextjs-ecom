@@ -37,42 +37,59 @@
 .carousal_section{
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
 
     min-width: 100vw;
     height: 80vh;
 }
-.carousal_section p{
+.carousal_section_link_to_section,
+.carousal_section__category_name{
     position: absolute;
     min-height: 100px;
     min-width: 100px;
-    border: solid rgb(255, 255, 255) 3px;
-    left: 20%;
+    border: solid rgb(255, 255, 255) 1px;
     font-size: xx-large;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    cursor: pointer;
+}
+.carousal_section__category_name{
+    right: 20vw;
+    transform: translateX(50%);
+    align-items: center;
+}
+.carousal_section_link_to_section{
+    left: 20vw;
+    transform: translateX(-50%);
+    align-items: flex-end;
 }
 
 .hero_content__img_container{
     position: relative;
     width: 300px;
     height: 300px;
-    /* border-radius: 50%;  */
-    clip-path: circle(50% at 50% 50%); 
-    -webkit-clip-path: circle(50% at 50% 50%);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%; 
+    /* clip-path: circle(50% at 50% 50%);  */
+    /* -webkit-clip-path: circle(50% at 50% 50%); */
 }
 
 .hero_content__side_radio_btns{
     display: grid;
     position: absolute;
     right: 50px;
-    top: 0px;
+    top: calc(50% - 45px);
     /* bottom: 0px; */
-    transform: translateY(70%);
-    gap: 40px;
+    transform: translateY(-50%);
+    gap: 30px;
 }
 
 .hero_content__side_radio_btns input[type=radio]{
-    accent-color: rgb(255, 0, 0);
+    accent-color: rgb(255, 255, 255);
 }
 
 .bottom_control_panel{
@@ -80,7 +97,7 @@
     justify-content: space-around;
     position: absolute;
     inset-inline: 50px;
-    bottom: 60px;
+    bottom: 100px;
 } 
 
 .hero_btn{
@@ -92,7 +109,15 @@
     border: 0px;
     transition: transform 200ms ease-in-out;
 }
+
+.hero_btn_link{
+    border: solid white 1px;
+    border-radius: 80px;
+    padding-block: 0.4em;
+    padding-inline: 3em;
+}
+
 .hero_btn:hover{
-    transform: scale(2);
-    transition: transform 200ms ease-in-out;
+    transform: scale(1.5);
+    transition: transform 100ms ease-in-out;
 }

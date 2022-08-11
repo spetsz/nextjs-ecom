@@ -9,8 +9,8 @@ import heroBg from '../public/assets/hero_bg.jpg';
 export default function Navbar({links, ...props}){
     return (
         <>
-        <nav className={styles.navbar_container +' '+ styles.glassmorphHigh}>
-            <BgWithBlur bg={heroBg} height={'56px'} width={'100vw'} imgPos="0px 0px"/>
+        <nav className={styles.navbar_container }>
+            <BgWithBlur bg={heroBg} height={'45px'} width={'100vw'} imgPos="0px 0px"/>
         {
         // Dynamic links with the following. Need to decide on the type/ category of links before uncommenting the code below.
             links &&

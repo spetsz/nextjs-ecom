@@ -5,7 +5,7 @@ import styles from '../../styles/hero.module.css';
 import Image from "next/image";
 import heroBg from '../../public/assets/hero_bg.jpg';
 import BgWithBlur from "../BgWithBlur";
-import { BsChevronDoubleRight, BsChevronDoubleLeft } from "react-icons/bs";
+import { BsChevronDoubleRight, BsChevronDoubleLeft, BsArrowRight } from "react-icons/bs";
 
 export default function Hero({ slides }) {
     const [translateAmount, setTranslateAmount] = useState(0)
@@ -43,7 +43,7 @@ export default function Hero({ slides }) {
     return (
         <>
             <section className={styles.hero__container}>
-                <BgWithBlur bg={heroBg} height={'calc(100vh - 40px)'} width={'100vw'} imgPos="0px -40px"/>
+                <BgWithBlur bg={heroBg} height={'calc(100vh - 45px)'} width={'100vw'} imgPos="0px -45px"/>
 
                 {/* The main content, logo, links, etc */}
                 <main className={styles.hero_content}>
@@ -53,15 +53,26 @@ export default function Hero({ slides }) {
                             slides &&
                             slides.map(({ categoryName, logo }, i) => {
                                 return (
+                                    <>
                                     <div className={styles.carousal_section} key={i}>
-                                        <p>{categoryName}</p>
+                                        <div className={styles.carousal_section_link_to_section}>
+                                            <a href="#sales">
+                                                sales<br/>
+                                                special<br/>
+                                                offers <BsArrowRight/>
+                                            </a>
+                                        </div>
                                         <div className={styles.hero_content__img_container}>
                                             <Image src={logo}
                                                 layout='fill'
-                                                objectFit="cover"
+                                                objectFit="contain"
+                                                objectPosition='center'
                                             />
                                         </div>
+                                        <p className={styles.carousal_section__category_name}>{categoryName}</p>
+                                        
                                     </div>
+                                    </>
                                 )
                             })
                         }
@@ -83,7 +94,7 @@ export default function Hero({ slides }) {
                     </section>
                     <section className={styles.bottom_control_panel}>
                         <button className={styles.hero_btn} onClick={goLeft}><BsChevronDoubleLeft />Hair Care</button>
-                        <Link href=''><a  className={styles.hero_btn} >Body Care</a></Link>
+                        <Link href=''><a  className={styles.hero_btn+ ' ' +styles.hero_btn_link} >Body Care</a></Link>
                         <button className={styles.hero_btn} onClick={goRight}>Face Care <BsChevronDoubleRight /></button>
                     </section>
                 </main>

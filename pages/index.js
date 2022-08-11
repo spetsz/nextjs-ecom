@@ -11,21 +11,17 @@ import Navbar from "../components/Navbar";
 ////////////////////////////////////////////////////////////
 import Image from "next/image";
 import heroBg from '../public/assets/hero_bg.jpg';
-import logo0 from '../public/assets/hero\ logos/ducati.jpg';
-import logo1 from '../public/assets/hero\ logos/mvAgusta0.jpg';
-import logo2 from '../public/assets/hero\ logos/mvAgusta1.jpg';
-import logo3 from '../public/assets/hero\ logos/mvAgusta2.jpg';
-import logo4 from '../public/assets/hero\ logos/mvAgusta3.jpg';
-import logo5 from '../public/assets/hero\ logos/mv_transparent.png';
-import logo6 from '../public/assets/hero\ logos/mv1_transparent.png';
+import logo0 from '../public/assets/hero\ logos/mv1_transparent.png';
+import logo1 from '../public/assets/hero\ logos/laptop.png';
+import logo2 from '../public/assets/hero\ logos/case.png';
+import logo3 from '../public/assets/hero\ logos/sunglasses.png';
+import logo4 from '../public/assets/hero\ logos/perfume.png';
 const heroData = [
-  { categoryName: 'In the name of love', logo: logo0 },
-  { categoryName: 'step inside', logo: logo1 },
-  { categoryName: 'Ive been humble too long', logo: logo2 },
-  { categoryName: 'lights camera action', logo: logo3 },
-  { categoryName: 'rock it up rock it up', logo: logo4 },
-  { categoryName: 'rock it up rock it up', logo: logo5 },
-  { categoryName: 'rock it up rock it up', logo: logo6 }
+  { categoryName: 'mv agusta', logo: logo0 },
+  { categoryName: 'laptop', logo: logo1 },
+  { categoryName: 'gaming pc', logo: logo2 },
+  { categoryName: 'sunglasses', logo: logo3 },
+  { categoryName: 'fragrance', logo: logo4 },
 ]
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////

@@ -1,9 +1,8 @@
-.glassmorphHigh{
-    /* From https://css.glass */
+/* .glassmorphHigh{
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(11.8px);
     -webkit-backdrop-filter: blur(11.8px);
-}
+} */
 
 .navbar_container{
     display: flex;
@@ -14,7 +13,7 @@
     top: 0px;
     inset-inline: 0px;
     height: 45px;
-    z-index: 100;
+    z-index: 10;
 
     /* box-shadow: 0px 0px 27px 0px rgba(63, 63, 63, 0.53); */
 }
