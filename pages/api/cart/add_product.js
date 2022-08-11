@@ -5,9 +5,11 @@ import mongoose from 'mongoose'
 import User from '../../../models/User'
 import Product from '../../../models/Product'
 import jwt from 'jsonwebtoken'
+import {auth} from '../../../utils/auth'
 
 // Authenticate token
 
+/*
 const auth = async (req,res, token)=>{
     // Check if no token
     if(!token){
@@ -22,7 +24,7 @@ const auth = async (req,res, token)=>{
         res.status(401).json({msg : 'Token not valid!'})
     }
 }
-
+*/
 
 // Superstructure to validate request
 const productObj = object({
@@ -41,7 +43,7 @@ export default async (req, res)=>{
     try {
         await dbConnect()
 
-        auth(req,res, token)
+        await auth(req,res, token)
         
         try {
             assert({product_id, token, quantity}, productObj)
