@@ -41,13 +41,14 @@ const signup = () => {
 
         if(!email || !password1 || !first_name || !last_name){
 
-            window.alert("Fields can't be Empty")
+            console.log("Fields can't be Empty")
+            
 
         }else{
            
             if(password1 !== password2){
 
-                window.alert('Passwords do not match!')
+              console.log('Passwords do not match!')
 
             }else{
                 
@@ -57,10 +58,15 @@ const signup = () => {
                 email = email.trim()
 
                 try {
-                        
+                    
+                   
+
                     // Validating user input 
                     assert({first_name, last_name, email, password1}, RequestBody)
-
+                    
+              
+                   
+              
                         
                     // Building the request's body
                     const requestBody = JSON.stringify({
