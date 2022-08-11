@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 
-export default function BgWithBlur({imgPos , bg, height, width, imgContainerStyle, ...props }) {
+export default function BgWithBlur({imgPos ,nobg, bg, height, width, imgContainerStyle, ...props }) {
     let fixedStyle = {
         position: 'absolute',
         overflow: 'hidden',
@@ -11,22 +11,32 @@ export default function BgWithBlur({imgPos , bg, height, width, imgContainerStyl
         width: '100px',
         zIndex: '-1'
     }
-    fixedStyle.width = width
-    fixedStyle.height = height
+    if (height)
+        fixedStyle.height = height
+    if (width)
+        fixedStyle.width = width
 
     return (
         <>
             {/* Background Image */}
-            <article className={imgContainerStyle}
-                style={fixedStyle}
-            >
-                <Image src={bg}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition={imgPos ? imgPos : 'center'}
-                    priority
-                />
-            </article>
+            {
+                nobg ?
+                <article className={imgContainerStyle}
+                    style={fixedStyle}
+                >
+                </article>
+                :
+                <article className={imgContainerStyle}
+                    style={fixedStyle}
+                >
+                    <Image src={bg}
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition={imgPos ? imgPos : 'center'}
+                        priority
+                    />
+                </article>
+            }
             {/* The following article tag is responsible for the frosted glass effect on top of the bg  */}
             <article className={`${imgContainerStyle} glassmorphHigh`}
                 style={fixedStyle}

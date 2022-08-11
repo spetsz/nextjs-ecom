@@ -57,7 +57,7 @@ export default function Hero({ slides }) {
                                     <div className={styles.carousal_section} key={i}>
                                         <div className={styles.carousal_section_link_to_section}>
                                             <a href="#sales">
-                                                sales<br/>
+                                                sales <mark style={{background: "transparent", color: "red"}}>&</mark><br/>
                                                 special<br/>
                                                 offers <BsArrowRight/>
                                             </a>

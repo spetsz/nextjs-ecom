@@ -1,7 +1,25 @@
-.card_container{
 
+.card_container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
-    gap: 30px;
-    justify-content: space-evenly;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.contentLoad_btn {
+    border: 0px;
+    padding-top: 9px;
+    margin-top: 40px;
+    width: 100%;
+    border-top: solid rgb(93, 93, 93) 2px;
+    background-color: transparent;
+    transition: border 300ms;
+
+    cursor: pointer;
+}
+
+.contentLoad_btn:hover {
+    border-top: solid rgb(255, 0, 0) 2px;
+    transition: border 300ms;
 }

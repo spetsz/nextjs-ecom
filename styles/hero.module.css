@@ -1,7 +1,7 @@
 .hero__container{
     overflow: hidden;
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 45px);
     width: 100vw;
 }
 
@@ -97,7 +97,7 @@
     justify-content: space-around;
     position: absolute;
     inset-inline: 50px;
-    bottom: 100px;
+    bottom: 60px;
 } 
 
 .hero_btn{

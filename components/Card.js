@@ -10,7 +10,7 @@ export default function Card({ item, className, key }) {
     const {id, thumbnail, title, price, rating, description } = item
 
     return(
-        <section className={className} key={id}>
+        <section className={styles.card__container} key={id}>
             <article className={`${className}--img ${styles.card__img_container}`}>
                 <Link href={`/products/${id}`} >
                     <Image src={thumbnail}

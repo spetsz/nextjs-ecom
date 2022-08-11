@@ -31,10 +31,10 @@ export default function ProductsPage({ products, ...props }) {
                             [...Array(10)].map((elem, i)=> <CardGrid key={i} itemList={products} loading/> )
                     }
 
-                    <button onClick={getMoreProducts} className={styles.contentLoad_btn}>
+                    {/* <button onClick={getMoreProducts} className={styles.contentLoad_btn}>
                         <p>LOAD MORE</p>
                         <BsChevronBarDown />
-                    </button>
+                    </button> */}
                     <div className={styles.bottom_banner}>I AM AN UGLY BANNER! I SERVE NO PURPOSE OTHER THAN TO PESTER THE WEBSITE USERS!</div>
                 </main>
 
