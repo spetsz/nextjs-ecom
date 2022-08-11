@@ -6,12 +6,13 @@
     -webkit-backdrop-filter: blur(4px);
 } */
 
-.card__img-container{
-    border: 20px solid blue;
+.card__img_container{
+    cursor: pointer;
 }
 .card__body{
     display: flex;
     flex-wrap: wrap;
+    cursor: default;
 }
 
 .card__body__title{
@@ -29,4 +30,5 @@
     background-color: rgb(128, 0, 0);
     margin-left: auto;
     border: none;
+    cursor: pointer;
 }

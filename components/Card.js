@@ -11,7 +11,7 @@ export default function Card({ item, className, key }) {
 
     return(
         <section className={className} key={id}>
-            <article className={`${className}--img`}>
+            <article className={`${className}--img ${styles.card__img_container}`}>
                 <Link href={`/products/${id}`} >
                     <Image src={thumbnail}
                             width={228}

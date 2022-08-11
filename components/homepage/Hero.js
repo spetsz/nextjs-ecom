@@ -43,7 +43,7 @@ export default function Hero({ slides }) {
     return (
         <>
             <section className={styles.hero__container}>
-                <BgWithBlur bg={heroBg} height={'100vh'} width={'100vw'}/>
+                <BgWithBlur bg={heroBg} height={'calc(100vh - 40px)'} width={'100vw'} imgPos="0px -40px"/>
 
                 {/* The main content, logo, links, etc */}
                 <main className={styles.hero_content}>

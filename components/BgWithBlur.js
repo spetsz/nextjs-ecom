@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 
-export default function BgWithBlur({ bg, height, width, imgContainerStyle, ...props }) {
+export default function BgWithBlur({imgPos , bg, height, width, imgContainerStyle, ...props }) {
     let fixedStyle = {
         position: 'absolute',
         overflow: 'hidden',
@@ -23,6 +23,7 @@ export default function BgWithBlur({ bg, height, width, imgContainerStyle, ...pr
                 <Image src={bg}
                     layout="fill"
                     objectFit="cover"
+                    objectPosition={imgPos ? imgPos : 'center'}
                     priority
                 />
             </article>
