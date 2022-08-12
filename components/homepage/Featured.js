@@ -21,7 +21,7 @@ export default function Featured({products, ...props}){
                 isLoading ?
                     <CardGrid itemList={products} loading/>
                     :
-                    <CardGrid itemList={products} />
+                    <CardGrid itemList={products} productLimit='30'/>
             }
         </section>
         </>

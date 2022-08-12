@@ -28,7 +28,7 @@ const heroData = [
 ////////////////////////////////////////////////////////////
 
 export async function getStaticProps(){
-    const res = await fetch('https://dummyjson.com/products?limit=20')
+    const res = await fetch('https://dummyjson.com/products?limit=30')
     const props = await res.json()
 
 

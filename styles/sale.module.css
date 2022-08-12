@@ -1,0 +1,17 @@
+.content_container{
+    padding-inline: 3em;
+    min-height: calc(100vh - 45px);
+}
+
+.card_container{
+    min-height: 75vh;
+    
+    display: grid;
+    grid-template-columns: repeat(3, clamp(20px, 30%, 400px));
+    justify-content: space-between;
+}
+
+.section_heading{
+    border-bottom: 1px solid white;
+    margin-block: 1em;
+}

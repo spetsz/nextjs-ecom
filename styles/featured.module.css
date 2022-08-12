@@ -1,7 +1,7 @@
 .bgPattern{
     background-color: rgba(0, 0, 0, 0.624);
-    background-image: linear-gradient(25deg, #ff272775 30%,#343434bd 60%);
-    filter: blur(3px);
+    background-image: linear-gradient(45deg,#343434bd 50%, #ff272775 50%);
+    /* filter: blur(3px); */
 }
 
 .featured_container{

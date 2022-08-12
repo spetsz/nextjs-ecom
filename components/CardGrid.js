@@ -14,11 +14,14 @@ export default function CardGrid({ itemList, productLimit = 8, loading, style, .
     // itemList is an array
     const [productAmount, setProductAmount] = useState(8)
 
-    let getMoreProducts = () => {
-        if (productAmount + 8 <= productLimit) {
-            setProductAmount(productAmount + 8)
+    const getMoreProducts = () => {
+        if (productAmount == productLimit)
+            return null
+
+        if ((productAmount + 8) <= productLimit) {
+            setProductAmount((prev)=> prev + 8)
         } else {
-            setProductAmount(productLimit - productAmount + 8)
+            setProductAmount((prev)=> productLimit)
         }
     }
 

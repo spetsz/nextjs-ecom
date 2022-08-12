@@ -14,6 +14,7 @@ export default function Card({ item, className, key }) {
             <article className={`${className}--img ${styles.card__img_container}`}>
                 <Link href={`/products/${id}`} >
                     <Image src={thumbnail}
+                            objectFit='cover'
                             width={228}
                             height={177}
                         />

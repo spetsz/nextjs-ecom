@@ -29,7 +29,7 @@
 
 .carousal_container{
     display: flex;
-    transition: transform 200ms ease-in-out;
+    transition: transform 400ms ease-out;
     /* transition-timing-function: cubic-bezier(0.000, 1.000, 0.000, 1.005); */
 
 }
@@ -90,6 +90,7 @@
 
 .hero_content__side_radio_btns input[type=radio]{
     accent-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .bottom_control_panel{
