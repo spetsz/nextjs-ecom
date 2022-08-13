@@ -1,4 +1,5 @@
 import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 export default function Layout({ children}) {
     // this should be coming from an external API
@@ -24,6 +25,7 @@ export default function Layout({ children}) {
         <>
             <Navbar links={links} />
             {children}
+            <Footer/>
 
         </>
     )

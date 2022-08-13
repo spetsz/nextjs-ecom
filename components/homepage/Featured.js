@@ -4,6 +4,8 @@ import Image from "next/image";
 import CardGrid from "../CardGrid";
 import BgWithBlur from "../BgWithBlur"
 import heroBg from '../../public/assets/hero_bg.jpg';
+
+
 export default function Featured({products, ...props}){
     const [isLoading, setLoading] = useState(true)
   

@@ -4,7 +4,7 @@ import BgWithBlur from "../BgWithBlur"
 import Button from "@mui/material/Button";
 import styles from '../../styles/sale.module.css';
 import Typography from '@mui/material/Typography'
-
+import psychedelic from "../../public/assets/psychedelic.jpg"
 
 export default function Sale({ blogContent, ...props }) {
     const bannerStyling = { 
@@ -20,6 +20,7 @@ export default function Sale({ blogContent, ...props }) {
     return (
         <>
             <section className={styles.content_container}>
+            {/* <BgWithBlur bg={psychedelic} height='100%' width='100%' imgPos='center'/> */}
                 <Typography variant="h4" className={styles.section_heading}>Sale Product</Typography>
                 <article className={styles.card_container}>
                     {
