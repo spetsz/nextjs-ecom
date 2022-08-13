@@ -10,10 +10,10 @@ import CardContent from '@mui/material/CardContent';
 import { BsChevronBarDown } from "react-icons/bs";
 
 
-export default function CardGrid({ itemList, productLimit = 8, loading, style, ...props }) {
+export default function CardGrid({itemList, productLimit = 8, loading, style, ...props }) {
     // itemList is an array
     const [productAmount, setProductAmount] = useState(8)
-
+    const [showLoadMore, setLoadMoreVisibility] = useState(true)
     const getMoreProducts = () => {
         if (productAmount == productLimit)
             return null
@@ -24,7 +24,9 @@ export default function CardGrid({ itemList, productLimit = 8, loading, style, .
             setProductAmount((prev)=> productLimit)
         }
     }
-
+    useEffect(()=>{
+        setLoadMoreVisibility(productAmount != productLimit)
+    }, [productAmount])
     return (
         <>
             <section className={styles.card_container} style={style}>
@@ -73,10 +75,13 @@ export default function CardGrid({ itemList, productLimit = 8, loading, style, .
                         />)
                 }
             </section>
+            {
+            showLoadMore &&
             <button onClick={getMoreProducts} className={styles.contentLoad_btn}>
                 <p>LOAD MORE</p>
                 <BsChevronBarDown />
             </button>
+            }
         </>
     )
 }

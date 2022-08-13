@@ -14,7 +14,7 @@ export default function Sale({ blogContent, ...props }) {
         padding: '1.2em',
         borderRadius: '0px',
         background: 'transparent',
-        aspectRatio: '1/2'
+        aspectRatio: '4/6'
     }
     const templateBg = `https://picsum.photos/100/100`
     return (

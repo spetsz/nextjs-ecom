@@ -1,13 +1,15 @@
 .content_container{
     padding-inline: 3em;
     min-height: calc(100vh - 45px);
+    background-color: rgba(255, 0, 0, 0.399);
 }
 
 .card_container{
-    min-height: 75vh;
+    min-height: 5vh;
     
     display: grid;
-    grid-template-columns: repeat(3, clamp(20px, 30%, 400px));
+    grid-template-columns: repeat(3, clamp(20px, 27%, 400px));
+    grid-template-columns: repeat(3, 32%);
     justify-content: space-between;
 }
 

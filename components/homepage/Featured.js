@@ -6,6 +6,7 @@ import BgWithBlur from "../BgWithBlur"
 import heroBg from '../../public/assets/hero_bg.jpg';
 export default function Featured({products, ...props}){
     const [isLoading, setLoading] = useState(true)
+  
     useEffect(()=>{
         setTimeout(()=>{
             setLoading(false)
@@ -21,7 +22,7 @@ export default function Featured({products, ...props}){
                 isLoading ?
                     <CardGrid itemList={products} loading/>
                     :
-                    <CardGrid itemList={products} productLimit='30'/>
+                    <CardGrid itemList={products} productLimit='30' />
             }
         </section>
         </>
