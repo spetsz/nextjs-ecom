@@ -1,3 +1,47 @@
 .footer_container{
-    min-height: 100vh;
+    min-height: 30vh;
+    background-color: rgba(0, 0, 0, 0.348);
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+.article_container > *{
+    margin-block: 10px;
+}
+
+.footer_container form{
+    display: flex;
+    gap: 10px;
+}
+
+.form_input{
+    background-color: rgba(79, 79, 79, 0.837);
+    border: solid black 1px;
+    color: black;
+    padding-inline: 10px;
+    width: 50%;
+    border-radius: 100px 0px 0px 100px;
+    transition: background 500ms;
+}
+
+.form_input:focus{
+    background-color: white;
+    outline: rgba(253, 64, 64, 0.674) 3px solid;
+}
+.form_btn{
+    background-color: rgb(255, 98, 98);
+    width: 20%;
+    border-radius: 0px 100px 100px 0px;
+}
+.form_btn:hover{
+    background-color: rgb(42, 42, 42);
+}
+
+.copyright_container{
+    background-color: rgb(255, 98, 98);
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100vw;
+    height: 15px;
 }
