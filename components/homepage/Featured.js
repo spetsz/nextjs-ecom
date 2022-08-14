@@ -4,6 +4,7 @@ import Image from "next/image";
 import CardGrid from "../CardGrid";
 import BgWithBlur from "../BgWithBlur"
 import heroBg from '../../public/assets/hero_bg.jpg';
+import { Typography } from "@mui/material";
 
 
 export default function Featured({products, ...props}){
@@ -19,7 +20,7 @@ export default function Featured({products, ...props}){
         <>
         <section className={styles.featured_container}>
             <BgWithBlur nobg imgContainerStyle={styles.bgPattern} height={'100%'} width={'100%'}/>
-            <h2  className={styles.featured_heading}>Most Popular Products</h2>
+            <Typography variant='h4' className={styles.featured_heading}>Most Popular Products</Typography>
             {
                 isLoading ?
                     <CardGrid itemList={products} loading/>

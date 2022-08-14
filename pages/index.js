@@ -28,22 +28,25 @@ const heroData = [
 ////////////////////////////////////////////////////////////
 
 export async function getStaticProps(){
-    const res = await fetch('https://dummyjson.com/products?limit=30')
-    const props = await res.json()
-
-
+    const productsRes = await fetch('https://dummyjson.com/products?limit=30')
+    const productsArr = await productsRes.json()
+    const saleRes= await fetch('https://dummyjson.com/quotes?limit=3')
+    const saleArr = await saleRes.json()
+    console.log('staic ',saleArr)
     return {
-        props,
-
+        props: {
+          products : productsArr,
+          sale: saleArr
+        }
     }
 }
 
-export default function Home({products, ...props}){
+export default function Home({products, sale, ...props}){
   return (
   <>
     <Hero slides={heroData}/>
-    <Featured products={products}/>
-    <Sale/>
+    <Featured products={products.products}/>
+    <Sale bannerContent={sale.quotes}/>
     <Blogs/>
   </>
 

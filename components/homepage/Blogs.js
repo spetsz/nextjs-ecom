@@ -4,8 +4,8 @@ import { Typography } from "@mui/material";
 import { Paper, Button } from "@mui/material";
 import { BsArrowRight } from "react-icons/bs";
 import Carousel from "react-material-ui-carousel";
-import psychedelic from "../../public/assets/psychedelic.jpg"
 import BgWithBlur from "../BgWithBlur";
+import flow_bg from "../../public/assets/flow_bg.jpg"
 
 
 
@@ -19,9 +19,9 @@ export default function Blog(props) {
     }, [])
     
     return (
-        <>
+        <div style={{position: 'relative'}}>
+            <BgWithBlur bg={flow_bg} height={'100vh'} width={'100vw'} imgBlur={'3px'}/>
         <section className={styles.section_container}>
-            {/* <BgWithBlur bg={psychedelic} height='100%' width='100%' imgPos='center'/> */}
             <Typography className={styles.section_heading} variant="h4">Our Blogs </Typography>
             <Carousel 
                     animation="slide" 
@@ -46,6 +46,6 @@ export default function Blog(props) {
                 }
             </Carousel>
         </section>
-        </>
+        </div>
     )
 }

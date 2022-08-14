@@ -43,7 +43,7 @@ export default function Card({ item, className, key }) {
                                 whiteSpace: 'nowrap'
                         }}
                         >{description}</Typography>
-                    <Typography variant='span' color={'white'}><BsCurrencyDollar/>{price}</Typography>
+                    <Typography fontSize={'1.5rem'} variant='span' color={'white'}><BsCurrencyDollar/>{price}</Typography>
                     <Button variant="outlined"
                             size='small'
                             sx={{

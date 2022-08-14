@@ -2,8 +2,6 @@
     position: relative;
     min-height: calc(100vh - 45px);
     padding-inline: 3em;
-    /* background-color: rgba(255, 166, 58, 0.062); */
-    /* background: url('../public/assets/psychedelic.jpg') no-repeat center; */
 }
 
 .section_heading{
@@ -17,7 +15,8 @@
 }
 
 .carousel_slide{
-    background-color: rgba(246, 140, 10, 0.774);
+    background-color: #002a3e;
+    color: white;
     
     padding: 2em;
     aspect-ratio: 1/1;
