@@ -7,9 +7,6 @@ import BgWithBlur from "./BgWithBlur";
 import { BsFacebook, BsInstagram, BsTwitter, BsTwitch } from "react-icons/bs"
 
 export default function Footer() {
-    useEffect(() => {
-        window.scrollTo(0, 20000)
-    }, [])
     return (
         <>
             <div style={{ position: 'relative' }}>
